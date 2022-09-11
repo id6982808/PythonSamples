@@ -19,7 +19,9 @@ def main():
     #print(sys.path)
     
     # calltest 関数を呼び出し
-    calltest.call_02()
+    #calltest.call_02()
+    #calltest.call_03()
+    calltest.call_04()
 
 """
  エントリポイント
