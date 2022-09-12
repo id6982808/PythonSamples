@@ -21,7 +21,9 @@ def main():
     # calltest 関数を呼び出し
     #calltest.call_02()
     #calltest.call_03()
-    calltest.call_04()
+    #calltest.call_04()
+    #calltest.call_05()
+    calltest.call_06()
 
 """
  エントリポイント
