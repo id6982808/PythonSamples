@@ -79,3 +79,45 @@ def call_09():
     print(obj2.text)
     del obj2.text
     print(obj2.text)
+
+def call_10():
+    import class_decorator_test as cdt
+    
+    NewSampleCls = cdt.add_member(cdt.Sample)
+    obj = NewSampleCls()
+    print(obj.x)
+    
+    obj2 = cdt.Sample2()
+    print(obj2.x)
+    
+def call_11():
+    import special_method_test as smt
+    
+    user = smt.User("Kuro", 30)
+    print(user)
+    print(repr(user))
+    
+    p0 = smt.Coordinate(0, 0)
+    p1 = smt.Coordinate(100, 200)
+    p2 = smt.Coordinate(0, 200)
+    
+    if p0:
+        print("点p0は真")
+    
+    if p1:
+        print("点p1は真")
+    
+    if p2:
+        print("点p2は真")
+        
+def call_12():
+    import descriptor_test as dt
+    
+    obj = dt.Sample()
+    print(obj.descriptor)
+    
+    obj.descriptor = 'sample2'
+    print(obj.descriptor)
+    
+    del obj.descriptor
+    #print(obj.descriptor)

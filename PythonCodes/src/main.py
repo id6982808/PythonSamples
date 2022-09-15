@@ -26,7 +26,10 @@ def main():
     #calltest.call_06()
     #calltest.call_07()
     #calltest.call_08()
-    calltest.call_09()
+    #calltest.call_09()
+    #calltest.call_10()
+    #calltest.call_11()
+    calltest.call_12()
 
 """
  エントリポイント
