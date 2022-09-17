@@ -113,11 +113,35 @@ def call_11():
 def call_12():
     import descriptor_test as dt
     
-    obj = dt.Sample()
+    obj = dt.Sample('test')
     print(obj.descriptor)
+    print(obj.x)
     
     obj.descriptor = 'sample2'
+    obj.x = 'test2'
     print(obj.descriptor)
+    print(obj.x)
     
     del obj.descriptor
     #print(obj.descriptor)
+    
+    print(obj.y)
+    print(dt.Sample.y)
+
+def call_13():
+    import new_test as nt
+    
+    obj = nt.MyClass()
+    print(obj)
+    
+    obj = nt.MyStr('my_str')
+    print(obj)
+
+def call_14():
+    import operator_test as ot
+    
+    c1 = ot.Coordinate(1000, 2000)
+    c2 = ot.Coordinate(300, 400)
+    
+    print(c1 + c2)
+    print(c1 - c2)

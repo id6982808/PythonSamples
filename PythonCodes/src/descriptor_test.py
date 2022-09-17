@@ -20,3 +20,9 @@ class MyDescriptor:
 
 class Sample:
     descriptor = MyDescriptor('sample')
+    x = MyDescriptor('test')
+    y = 'global'
+    
+    def __init__(self, x):
+        self.x = x
+        self.y = 'local'
