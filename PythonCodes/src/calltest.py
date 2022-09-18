@@ -145,3 +145,10 @@ def call_14():
     
     print(c1 + c2)
     print(c1 - c2)
+
+def call_15():
+    import exception_test as et
+    
+    et.test()
+    print(et.sample(2))
+    print(et.sample('test'))
