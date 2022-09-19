@@ -32,7 +32,8 @@ def main():
     #calltest.call_12()
     #calltest.call_13()
     #calltest.call_14()
-    calltest.call_15()
+    #calltest.call_15()
+    calltest.call_16()
 
 """
  エントリポイント

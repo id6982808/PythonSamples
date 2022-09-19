@@ -152,3 +152,8 @@ def call_15():
     et.test()
     print(et.sample(2))
     print(et.sample('test'))
+
+def call_16():
+    import list_test as lt
+    
+    lt.list_test()
