@@ -157,3 +157,19 @@ def call_16():
     import list_test as lt
     
     lt.list_test()
+
+def call_17():
+    import map_test as mt
+    
+    data = mt.apply_map(mt.calc_double, [1, 3, 6, 50, 5])
+    print(list(data))
+    
+    data = mt.apply_map(lambda x : x * 3, [1, 3, 6, 50, 5])
+    print(list(data))
+
+def call_18():
+    import filter_test as ft
+    
+    data = ft.filter_test(ft.is_odd, [1, 2, 4, 5, 6, 10, 11])
+    print(list(data))
+    
